@@ -1,7 +1,7 @@
-import { styled } from '@stitches/react';
+import { styled } from '../../stitches.config';
 
 const Button = styled('button', {
-  backgroundColor: 'Aqua',
+  backgroundColor: '$gray400',
   borderRadius: '8px',
   fontSize: 12,
   padding: '1rem 2rem',

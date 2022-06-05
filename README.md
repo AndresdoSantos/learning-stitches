@@ -23,3 +23,26 @@ const Input = styled('input', {
   },
 });
 ```
+
+Agora que já vimos como criar um componente, vamos partir para a parte de configuração, na raiz do projeto basta criar o `stitches.config.ts`
+
+#### Tokens
+
+Dentro desse arquivo você pode definir `tokens` como parte do `createStitches`.
+
+`createStitches` nada mais é do que um objeto que pode receber:
+
+- **Theme**: Define seu tema de design, que mapeia para CSS props.
+
+Para usar isso em qualquer componente você deve:
+
+1. Importar o `styled` do `stitches.config`.
+2. Usar o `$` para acessar o tema que você quiser.
+
+```tsx
+{
+  backgroundColor: '$gray400';
+}
+```
+
+Além do `Theme` você pode usar mais ainda do `createStitches`, mas fica para um post.
