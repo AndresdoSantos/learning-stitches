@@ -26,7 +26,7 @@ const Input = styled('input', {
 
 Agora que já vimos como criar um componente, vamos partir para a parte de configuração, na raiz do projeto basta criar o `stitches.config.ts`
 
-#### Tokens
+#### Tokens e tema
 
 Dentro desse arquivo você pode definir `tokens` como parte do `createStitches`.
 
@@ -46,3 +46,32 @@ Para usar isso em qualquer componente você deve:
 ```
 
 Além do `Theme` você pode usar mais ainda do `createStitches`, mas fica para um post.
+
+#### Variants
+
+Você pode usar `variants`, as variantes servem para alterar as propriedades do componente de acordo com o layout.
+
+Fica assim:
+
+```tsx
+// Button.tsx
+
+const Button = styled('button', {
+  // base styles
+
+  variants: {
+    color: {
+      violet: {
+        backgroundColor: 'blueviolet',
+        color: 'white',
+      },
+      gray: {
+        backgroundColor: 'gainsboro',
+      },
+    },
+  },
+});
+
+// App.tsx
+<Button color="violet">
+```

@@ -8,8 +8,22 @@ const Button = styled('button', {
   border: 'none',
   outline: 'none',
   transition: 'background 0.8s',
-  '&:hover': {
-    background: 'Blue',
+  variants: {
+    color: {
+      violet: {
+        backgroundColor: 'blueviolet',
+        color: 'white',
+        '&:hover': {
+          backgroundColor: 'darkviolet',
+        },
+      },
+      gray: {
+        backgroundColor: 'gainsboro',
+        '&:hover': {
+          backgroundColor: 'lightgray',
+        },
+      },
+    },
   },
 });
 

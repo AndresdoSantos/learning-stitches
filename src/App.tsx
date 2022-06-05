@@ -4,7 +4,7 @@ import { Input } from './components/Input';
 function App() {
   return (
     <div>
-      <Button>My button component</Button>
+      <Button color="violet">My button component</Button>
       <Input placeholder="Type here" />
     </div>
   );
